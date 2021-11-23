@@ -15,7 +15,7 @@ app.config['DEBUG'] = True
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('URL_CUSTOM', 'sqlite:///data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = 'jose'
+app.secret_key = 'haudq'
 api = Api(app)
 
 jwt = JWT(app, authenticate, identity)  # /auth
